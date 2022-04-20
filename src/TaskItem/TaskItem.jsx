@@ -8,21 +8,20 @@ const TaskItem = ({ task, deleteTask, handleChangeStatus }) => {
   };
   return (
     <>
-      <li class="list-group-item mt-2 ">
+      <li class="list-group-item mt-2 d-flex justify-content-between flex-row">
         <input
           onChange={() => handleChangeStatus(task.id)}
           checked={checked}
-          class="form-check-input me-5 "
+          class="form-check-input "
           type="checkbox"
           value=""
           aria-label="..."
         />
-        <span>{task.title}</span>
-        <span className="ms-5">
-          <button onClick={deletemyTask} className="btn btn-danger ms-5">
-            <BsFillTrashFill className="delicon m-1 " />
-          </button>
-        </span>
+        <span className="my-auto">{task.title}</span>
+
+        <button onClick={deletemyTask} className="btn btn-danger  ">
+          <BsFillTrashFill className="delicon m-1 " />
+        </button>
       </li>
     </>
   );
