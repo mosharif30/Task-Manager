@@ -20,7 +20,7 @@ const TaskList = ({ tasks, deleteTask, handleChangeStatus }) => {
       ) : (
         <>
           <div class="alert alert-danger" role="alert">
-            You have nothing to do right now
+            There Is Nothing Here
           </div>
         </>
       )}
