@@ -12,7 +12,7 @@ const TaskItem = ({ task, deleteTask, handleChangeStatus }) => {
         <input
           onChange={() => handleChangeStatus(task.id)}
           checked={checked}
-          class="form-check-input "
+          class="form-check-input my-auto "
           type="checkbox"
           value=""
           aria-label="..."
